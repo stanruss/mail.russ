@@ -1,0 +1,31 @@
+{
+  "name": "mail.russ",
+  "version": "1.0.0",
+  "description": "Чистый сайт",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stanruss/mail.russ.git"
+  },
+  "author": "Stanislav Platonov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stanruss/mail.russ/issues"
+  },
+  "homepage": "https://github.com/stanruss/mail.russ#readme",
+  "devDependencies": {
+    "bower": "^1.8.2",
+    "browser-sync": "^2.21.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-notify": "^3.0.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "postcss-assets": "^5.0.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-nested": "^3.0.0",
+    "postcss-short": "^4.1.0"
+  }
+}

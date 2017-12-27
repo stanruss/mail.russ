@@ -1,0 +1,173 @@
+@import "fonts"
+@import "vars"
+@import "mixins/mixins"
+@import "mixins/mixin"
+
+html, body
+	
+body
+	font-size: 13px
+	min-width: 320px
+	position: relative
+	line-height: 16px
+	font-family: $default-font
+	width: 100%
+	overflow-y: scroll 
+section
+	width: 1108px
+	+push-auto	
+.top-tr 
+	& > td:first-child
+		width: 638px
+		
+	& > td:nth-child(2)
+		width: 389px
+		li
+			
+			list-style: none
+			+padding (19px, right-left)
+			a
+				font-size: 12px
+				color: #337ab7
+				text-decoration: none
+				&:hover
+					color: #f26d00
+					
+			&.dropdown
+				float: right
+				+padding(5px, top-bottom)
+
+	& > td:nth-child(3)
+		width: 46px
+.top-links
+	margin-bottom: 0
+	padding-left: 0
+	.dropdown
+		padding-right: 22px
+	span
+		+css-triangle(#337ab7, down, 4px)
+		position: absolute
+		top: 14px
+		right: 8px
+		
+	li:first-child
+		margin: 
+			left: 14px
+			right: 6px
+
+	li
+		display: inline-block
+		padding: 6px
+		position: relative
+		a
+			font-size: 12px
+			color: #337ab7
+			text-decoration: none
+			&:hover
+				color: #f26d00
+				span
+					+css-triangle(#f26d00, down, 4px)
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus
+	background-image: none
+	background-color: darken(#fff, 5%) 
+.dropdown-menu
+	width: 300px
+	border: 0 
+	line-height: $menuheight/2
+	li
+		width: 100%
+		+border(1px,#333,bottom)
+	li:first-child
+		margin: 0
+.dropdown
+
+	a
+		text-decoration: none
+.open
+	color: lighten(#000, 25%) darken(#fff, 5%) 
+	a
+		text-decoration: none
+		color: lighten(#000, 25%)
+		&:hover, a:focus
+			text-decoration: none
+			color: lighten(#000, 25%)
+	> ul
+		background-color: darken(#fff, 5%)
+		+border-radius (0, right-left-top)
+		margin-top: 0
+		+bsh(0,17px,17px,-17px,#111)
+.left-col, .right-col
+	+border(1px,#111,all)
+.left-col
+	width: $left-col-width
+	float: left
+	+padding($menuheight/0.8, right-left)
+	+padding($menuheight/2, top-bottom)
+.right-col
+	width: $right-col-width
+	float: right
+	padding: $menuheight/2 $menuheight/2 $menuheight/2 0
+	border-left: 0
+.Login-main
+	width: 260px
+	height: $left-col-width/3.5
+	margin-top: $menuheight/2
+	+border(1px, #111,all)
+	+border-radius($mainbrs, all)
+	+padding(14px, all)
+	.loginLoginFieldset
+		
+		.loginPasswordLabel
+			width: 160px
+			float: left
+		.loginLoginButton
+			float: right
+			line-height: 34px
+		label
+			display: block
+.loginRegister .open
+	padding-right: 7px 
+	& > ul
+		font-size: 12px
+		+border-radius($mainbrs,right-left-bottom)
+.left
+	margin-right: $menuheight/3
+.right
+	float: right
+.butt
+	li
+		display: inline-block
+		&.logout-button
+			float: right
+.photo
+	margin-top: $menuheight/5
+	img
+		float: left
+	.fa
+		margin: $menuheight/20 $menuheight/10 $menuheight/20 0
+		font-size: 15px
+.links
+	float: right
+	width: $left-col-width/2
+	a
+		display: block
+
+.row-reg
+	width: 400px
+	height: 30px
+	+push-auto
+	label
+		float: left
+		margin-top: 3px
+	input
+		float: right
+	button
+		+push-auto
+		width: 150px
+		display: block	
+		margin-top: 25px
+#errors
+	position: absolute
+	top: 33px
+	left: 450px
+@import "media" 
